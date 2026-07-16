@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<title>タレント詳細</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:sans-serif;
+}
+
+body{
+
+    background:linear-gradient(
+        135deg,
+        #fff0f6,
+        #ffd6e7,
+        #ffc0cb
+    );
+
+}
+
+/* 全体 */
+
+.profile{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    width:90%;
+    max-width:1400px;
+    margin:0 auto;
+    min-height:100vh;
+    gap:50px;
+}
+
+/* 左 */
+
+.left{
+    flex:1;
+}
+
+.back{
+
+display:inline-block;
+
+background:#b50064;
+
+color:white;
+
+padding:12px 25px;
+
+border-radius:30px;
+
+text-decoration:none;
+
+font-weight:bold;
+
+margin-bottom:40px;
+
+}
+
+.left h1{
+    font-size:clamp(40px,5vw,70px);
+}
+
+.kana{
+
+font-size:28px;
+
+margin-bottom:10px;
+
+}
+
+.english{
+
+font-size:28px;
+
+margin-bottom:60px;
+
+}
+
+.text{
+    font-size:clamp(18px,1.5vw,30px);
+}
+
+/* 右 */
+
+.right{
+
+width:50%;
+
+position:relative;
+
+text-align:right;
+
+}
+
+.right img{
+    width:100%;
+    max-width:650px;
+    height:auto;
+    object-fit:contain;
+}
+
+/* ハート */
+
+.heart{
+
+position:absolute;
+
+top:0;
+
+right:0;
+
+width:55px;
+
+height:55px;
+
+border-radius:50%;
+
+border:none;
+
+background:white;
+
+font-size:24px;
+
+cursor:pointer;
+
+}
+
+/* Gallery */
+
+.gallery{
+
+position:absolute;
+
+right:40px;
+
+bottom:30px;
+
+padding:18px 40px;
+
+border:none;
+
+border-radius:40px;
+
+background:white;
+
+font-size:28px;
+
+font-weight:bold;
+
+cursor:pointer;
+
+color:#4a4a4a;
+
+box-shadow:0 10px 30px rgba(0,0,0,.2);
+
+}
+
+iframe{
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.2);
+
+}
+</style>
+
+<body>
+
+<div class="profile">
+
+    <!-- 左側 -->
+    <div class="left">
+
+        <a href="member.html" class="back">
+            ← タレント一覧へ戻る
+        </a>
+
+        <h1>いぬちゃん</h1>
+
+        <p class="kana">
+            いぬちゃん
+        </p>
+
+        <p class="english">
+            Inutyan
+        </p>
+
+        <p class="text">
+
+            自分の可愛さを世界中に届ける事を目指している
+            自称インフルエンサー。
+
+            <br><br>
+
+            イギリスと日本のハーフで、
+            新しいこと、
+            楽しいこと、
+            恋バナが大好き。
+            記憶を断片的に失っている。
+            都市伝説を求め深夜彷徨い歩いているが、
+            ある組織に捕まっては脱走を繰り返している。
+
+        </p>
+
+        <iframe
+        width="400"
+        height="230"
+        src="https://www.youtube.com/embed/動画ID">
+        </iframe>
+
+    </div>
+
+    <!-- 右側 -->
+
+    <div class="right">
+
+        <img src="images/いぬちゃん.JPG">
+
+        <button>
+            GALLERY
+        </button>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

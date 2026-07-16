@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<header class="header">
+    <nav class="nav">
+
+        <a href="index.html">TOP</a></li>
+
+        <ul class="menu">
+            <li><a href="#news">NEWS</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="member.html">TALENT</a></li>
+            <li><a href="#schedule">SCHEDULE</a></li>
+            <li><a href="#events">EVENTS</a></li>
+            <li><a href="#videos">VIDEOS</a></li>
+            <li><a href="#music">MUSIC</a></li>
+            <li><a href="#goods">GOODS</a></li>
+            <li><a href="#special">SPECIAL</a></li>
+        </ul>
+
+        <div class="lang">
+            🌐 EN
+        </div>
+
+    </nav>
+</header>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>VTuber一覧</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<style>*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:sans-serif;
+}
+
+body{
+
+background:linear-gradient(
+135deg,
+#ffffff,
+#f7f2ff,
+#fff5f5);
+
+}
+
+.header{
+
+    position:fixed;
+
+    top:20px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:min(92%,1400px);
+
+    z-index:9999;
+
+    
+
+}
+.header{
+
+    animation:headerIn .8s ease;
+
+}
+
+@keyframes headerIn{
+
+0%{
+
+    opacity:0;
+
+    transform:translate(-50%,-40px);
+
+}
+
+100%{
+
+    opacity:1;
+
+    transform:translate(-50%,0);
+
+}
+
+}
+.nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 35px;
+
+    border-radius:60px;
+
+    background:rgba(255,255,255,.78);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    box-shadow:
+    0 12px 40px rgba(0,0,0,.12);
+
+}
+
+.menu{
+
+    display:flex;
+
+    gap:34px;
+
+    list-style:none;
+
+}
+
+.menu a{
+
+    text-decoration:none;
+
+    color:#2382d8;
+
+    font-weight:600;
+
+    font-size:15px;
+
+    letter-spacing:.08em;
+
+    transition:.3s;
+
+}
+
+.menu a:hover{
+
+    color:#63b6ff;
+
+    transform:translateY(-2px);
+
+}
+
+.logo{
+
+    text-decoration:none;
+
+    color:#63b6ff;
+
+    font-weight:bold;
+
+    font-size:18px;
+
+}
+
+
+
+/* タイトル */
+
+.hero{
+
+text-align:center;
+
+padding:60px;
+
+}
+
+.hero h1{
+
+font-size:60px;
+
+margin-bottom:30px;
+
+}
+
+.category button{
+
+padding:12px 40px;
+
+border:none;
+
+border-radius:30px;
+
+margin:10px;
+
+cursor:pointer;
+
+background:#eee;
+
+transition:.3s;
+
+}
+
+.category button.active{
+
+background:white;
+
+box-shadow:0 10px 20px rgba(0,0,0,.15);
+
+}
+
+/* カード */
+
+.card-area{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(230px,1fr));
+
+gap:40px;
+
+padding:60px;
+
+}
+
+.card{
+
+text-align:center;
+
+transition:.3s;
+
+cursor:pointer;
+
+}
+
+.card img{
+
+width:200px;
+
+height:200px;
+
+border-radius:50%;
+
+object-fit:cover;
+
+box-shadow:0 10px 30px rgba(0,0,0,.2);
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card:hover img{
+
+transform:scale(1.05);
+
+}
+
+.card h2{
+
+margin-top:15px;
+
+font-size:22px;
+
+}
+</style>
+
+<body>
+
+
+
+<section class="hero">
+
+<h1>TALENTS</h1>
+
+<div class="category">
+
+<button class="active">JP</button>
+<button>EN</button>
+<button>KR</button>
+
+</div>
+
+</section>
+
+<section class="card-area">
+
+<div class="card">
+    <a href="inutyan.html">
+
+        <img src="images/いぬちゃんドット.png">
+
+        <h2>いぬちゃん</h2>
+    </a>
+</div>
+
+<div class="card">
+
+<img src="images/ちょきんドット.png">
+
+<h2>千代金 ちょきん</h2>
+
+</div>
+
+<div class="card">
+
+<img src="images/おピヨドット.png">
+
+<h2>おピヨ</h2>
+
+</div>
+
+<div class="card">
+
+<img src="images/シェフドット.png">
+
+<h2>シェフ</h2>
+
+</div>
+
+<div class="card">
+
+<img src="images/ケロドット.png">
+
+<h2>水丸 けろ</h2>
+
+</div>
+
+<div class="card">
+
+<img src="images/チャンレイドット.png">
+
+<h2>チャン・レイ</h2>
+
+</div>
+
+<div class="card">
+
+<img src="images/神社じんじゃドット.png">
+
+<h2>神社 じんじゃ</h2>
+
+</div>
+
+<div class="card">
+
+<img src="images/むさしドット.png">
+
+<h2>むさし</h2>
+
+</div>
+
+<div class="card">
+
+<img src="images/ユルポケットドット.JPG">
+
+<h2>ユル・ポケット</h2>
+
+</div>
+
+<div class="card">
+
+<img src="images/本也ドット.JPG">
+
+<h2>玖井出 本也</h2>
+
+</div>
+
+<div class="card">
+
+<img src="images/らぺドット.png">
+
+<h2>千浜 らぺ</h2>
+
+</div>
+
+<div class="card">
+
+<img src="images/さこんじドット.png">
+
+<h2>茶蔵居 藍祐</h2>
+
+</div>
+
+<div class="card">
+
+<img src="images/りんドット.png">
+
+<h2>水月 りん</h2>
+
+</div>
+
+</section>
+
+
+
+<script>
+
+
+
+</script>
+
+</body>
+</html>
+
